@@ -91,62 +91,62 @@ The system separates major grant intelligence tasks into specialized AI agents.
 These agents support a coordinated workflow for funding discovery and prioritization.
 
 ```text
-                    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-                    â”‚   PUBLIC FUNDING DATA    â”‚
-                    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                                  â”‚
-             â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-             â”‚                    â”‚                    â”‚
-             â–¼                    â–¼                    â–¼
-      â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”      â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”      â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-      â”‚ NIH GUIDE   â”‚      â”‚ GRANTS.GOV  â”‚      â”‚NIH RePORTER â”‚
-      â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”˜      â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”˜      â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”˜
-             â”‚                    â”‚                    â”‚
-             â–¼                    â–¼                    â–¼
-      â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”      â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”      â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-      â”‚ NIH GUIDE   â”‚      â”‚ INGESTION   â”‚      â”‚ NIH CONTEXT â”‚
-      â”‚    AGENT    â”‚      â”‚    AGENT    â”‚      â”‚    AGENT    â”‚
-      â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”˜      â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”˜      â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-             â”‚                    â”‚
-             â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜
-                          â–¼
-                  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-                  â”‚ GRANT PARSER  â”‚
-                  â”‚     AGENT     â”‚
-                  â””â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜
-                          â–¼
-                  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-                  â”‚ DEDUPLICATION â”‚
-                  â”‚  & FILTERING  â”‚
-                  â””â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜
-                          â–¼
-                  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-                  â”‚ ML RELEVANCE  â”‚
-                  â”‚     AGENT     â”‚
-                  â””â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜
-                          â–¼
-             â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-             â”‚            â”‚            â”‚
-             â–¼            â–¼            â–¼
-         ðŸ”´ HIGH       ðŸŸ  MEDIUM    ðŸŸ¡ WATCHLIST
-             â”‚            â”‚            â”‚
-             â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                          â–¼
-                  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-                  â”‚    SQLITE     â”‚
-                  â”‚ INTELLIGENCE  â”‚
-                  â”‚     STORE     â”‚
-                  â””â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜
-                          â–¼
-          â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-          â”‚               â”‚                â”‚
-          â–¼               â–¼                â–¼
+                    ┌──────────────────────────┐
+                    │   PUBLIC FUNDING DATA    │
+                    └─────────────┬────────────┘
+                                  │
+             ┌────────────────────┼────────────────────┐
+             │                    │                    │
+             ▼                    ▼                    ▼
+      ┌─────────────┐      ┌─────────────┐      ┌─────────────┐
+      │ NIH GUIDE   │      │ GRANTS.GOV  │      │NIH RePORTER │
+      └──────┬──────┘      └──────┬──────┘      └──────┬──────┘
+             │                    │                    │
+             ▼                    ▼                    ▼
+      ┌─────────────┐      ┌─────────────┐      ┌─────────────┐
+      │ NIH GUIDE   │      │ INGESTION   │      │ NIH CONTEXT │
+      │    AGENT    │      │    AGENT    │      │    AGENT    │
+      └──────┬──────┘      └──────┬──────┘      └─────────────┘
+             │                    │
+             └────────────┬───────┘
+                          ▼
+                  ┌───────────────┐
+                  │ GRANT PARSER  │
+                  │     AGENT     │
+                  └───────┬───────┘
+                          ▼
+                  ┌───────────────┐
+                  │ DEDUPLICATION │
+                  │  & FILTERING  │
+                  └───────┬───────┘
+                          ▼
+                  ┌───────────────┐
+                  │ ML RELEVANCE  │
+                  │     AGENT     │
+                  └───────┬───────┘
+                          ▼
+             ┌────────────┼────────────┐
+             │            │            │
+             ▼            ▼            ▼
+         🔴 HIGH       🟠 MEDIUM    🟡 WATCHLIST
+             │            │            │
+             └────────────┼────────────┘
+                          ▼
+                  ┌───────────────┐
+                  │    SQLITE     │
+                  │ INTELLIGENCE  │
+                  │     STORE     │
+                  └───────┬───────┘
+                          ▼
+          ┌───────────────┼────────────────┐
+          │               │                │
+          ▼               ▼                ▼
       DASHBOARD         EXCEL           DIGEST
-                          â”‚
-                          â–¼
+                          │
+                          ▼
                   RESEARCHER REVIEW
-                          â”‚
-                          â–¼
+                          │
+                          ▼
                   FEEDBACK AGENT
 ```
 
@@ -208,15 +208,15 @@ The intelligence engine applies penalties when biomedical language is broad but 
 
 ## Opportunity Intelligence Classification
 
-Each opportunity receives a relevance score from **0â€“100**.
+Each opportunity receives a relevance score from **0–100**.
 
 | Intelligence Level | Interpretation                                                                                        |
 | ------------------ | ----------------------------------------------------------------------------------------------------- |
-| ðŸ”´ **HIGH**        | Strong evidence that AI, ML, statistics, or computational expertise may be central to the opportunity |
-| ðŸŸ  **MEDIUM**      | Potential opportunity for interdisciplinary data-science collaboration                                |
-| ðŸŸ¡ **WATCHLIST**   | Weak or emerging computational signals; retained for monitoring                                       |
+| 🔴 **HIGH**        | Strong evidence that AI, ML, statistics, or computational expertise may be central to the opportunity |
+| 🟠 **MEDIUM**      | Potential opportunity for interdisciplinary data-science collaboration                                |
+| 🟡 **WATCHLIST**   | Weak or emerging computational signals; retained for monitoring                                       |
 
-The score is designed to **prioritize expert reviewâ€”not replace scientific judgment**.
+The score is designed to **prioritize expert review—not replace scientific judgment**.
 
 ---
 
@@ -292,17 +292,17 @@ This creates the foundation for a future adaptive recommendation system in which
 
 ```text
 Agent Recommendation
-        â”‚
-        â–¼
+        │
+        ▼
 Researcher Review
-        â”‚
-        â–¼
+        │
+        ▼
 Useful / Not Useful
-        â”‚
-        â–¼
+        │
+        ▼
 Feedback Store
-        â”‚
-        â–¼
+        │
+        ▼
 Future Relevance Tuning
 ```
 
@@ -463,7 +463,6 @@ using the official funding opportunity announcement.
 
 ---
 
-â­ **If this research tool is useful to you, consider starring the repository.**
+⭐ **If this research tool is useful to you, consider starring the repository.**
 
-ðŸ’¡ **Ideas, issues, and research collaborations are welcome.**
-
+💡 **Ideas, issues, and research collaborations are welcome.**
